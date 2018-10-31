@@ -21,6 +21,12 @@ app.get("/friends", function(req, res){
   res.render("friends", {friends: friendsArr});
 });
 
+// post ROUTE - adds or  sends data to be added or to be used somehow on the server side 
+app.post("/addFriend", function(req, res){
+  // Test
+  res.send("You have reached the POST ROUTE!");
+});
+
 // ============================================================================
 // SERVER
 // ============================================================================
