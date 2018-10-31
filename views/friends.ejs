@@ -4,7 +4,8 @@
   <li><%= friend %></li>
 <% }); %>
 
+<!-- all form data is put in the request body -->
 <form action="/addFriend" method="POST">
-  <input type="text" placeholder="name">
+  <input type="text" name="newFriend" placeholder="name">
   <button>I made a new friend!</button>
 </form>
